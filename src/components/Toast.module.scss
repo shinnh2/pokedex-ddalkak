@@ -1,0 +1,30 @@
+.toast {
+  position: fixed;
+  bottom: $space-8;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: var(--color-bg-toast);
+  color: var(--color-text-toast);
+  padding: $space-3 $space-6;
+  border-radius: $radius-full;
+  font-size: $font-size-sm;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  box-shadow: $shadow-lg;
+  z-index: 1000;
+  opacity: 0;
+  transition: transform $transition-slow, opacity $transition-slow;
+  pointer-events: none;
+  white-space: nowrap;
+
+  &.visible {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+.icon {
+  font-size: $font-size-md;
+}

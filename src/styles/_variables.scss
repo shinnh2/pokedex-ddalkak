@@ -1,0 +1,165 @@
+// ===========================
+// PRIMITIVE TOKENS
+// ===========================
+
+// Color Palette
+$color-red-50: #fff0f0;
+$color-red-100: #ffe0e0;
+$color-red-400: #ff6b6b;
+$color-red-500: #e53935;
+$color-red-600: #c62828;
+
+$color-yellow-300: #ffd54f;
+$color-yellow-400: #ffca28;
+$color-yellow-500: #ffc107;
+
+$color-blue-100: #e3f2fd;
+$color-blue-300: #64b5f6;
+$color-blue-500: #2196f3;
+$color-blue-700: #1565c0;
+
+$color-gray-0: #ffffff;
+$color-gray-50: #fafafa;
+$color-gray-100: #f5f5f5;
+$color-gray-150: #efefef;
+$color-gray-200: #e8e8e8;
+$color-gray-300: #d0d0d0;
+$color-gray-400: #a0a0a0;
+$color-gray-500: #707070;
+$color-gray-600: #505050;
+$color-gray-700: #303030;
+$color-gray-800: #1a1a1a;
+$color-gray-900: #0d0d0d;
+
+$color-pixel-dark: #212121;
+$color-pixel-mid: #424242;
+$color-pixel-light: #bdbdbd;
+
+// Spacing
+$space-1: 4px;
+$space-2: 8px;
+$space-3: 12px;
+$space-4: 16px;
+$space-5: 20px;
+$space-6: 24px;
+$space-8: 32px;
+$space-10: 40px;
+$space-12: 48px;
+$space-16: 64px;
+
+// Typography
+$font-pixel: 'Press Start 2P', monospace;
+$font-body: 'Noto Sans KR', sans-serif;
+
+$font-size-xs: 10px;
+$font-size-sm: 12px;
+$font-size-md: 14px;
+$font-size-base: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 24px;
+$font-size-2xl: 32px;
+$font-size-3xl: 48px;
+
+// Border radius
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 16px;
+$radius-xl: 24px;
+$radius-full: 9999px;
+
+// Shadows
+$shadow-sm: 0 2px 4px rgba(0,0,0,0.08);
+$shadow-md: 0 4px 12px rgba(0,0,0,0.12);
+$shadow-lg: 0 8px 32px rgba(0,0,0,0.16);
+$shadow-pixel: 4px 4px 0px rgba(0,0,0,0.25);
+
+// Transitions
+$transition-fast: 150ms ease;
+$transition-base: 250ms ease;
+$transition-slow: 400ms ease;
+
+// ===========================
+// SEMANTIC TOKENS (CSS Variables)
+// ===========================
+
+:root {
+  // Backgrounds
+  --color-bg: #{$color-gray-100};
+  --color-bg-card: #{$color-gray-0};
+  --color-bg-header: #{$color-gray-0};
+  --color-bg-input: #{$color-gray-0};
+  --color-bg-badge: #{$color-gray-200};
+  --color-bg-overlay: rgba(0,0,0,0.5);
+  --color-bg-toast: #{$color-gray-800};
+
+  // Text
+  --color-text-main: #{$color-gray-800};
+  --color-text-secondary: #{$color-gray-500};
+  --color-text-muted: #{$color-gray-400};
+  --color-text-inverse: #{$color-gray-0};
+  --color-text-accent: #{$color-red-500};
+  --color-text-toast: #{$color-gray-0};
+
+  // Borders
+  --color-border: #{$color-gray-200};
+  --color-border-focus: #{$color-red-500};
+  --color-border-card: #{$color-gray-200};
+
+  // Brand
+  --color-brand-primary: #{$color-red-500};
+  --color-brand-secondary: #{$color-yellow-400};
+  --color-brand-dark: #{$color-red-600};
+
+  // UI Components
+  --color-button-primary-bg: #{$color-red-500};
+  --color-button-primary-text: #{$color-gray-0};
+  --color-button-primary-hover: #{$color-red-600};
+
+  // Pixel Grid Accent
+  --color-pixel-dot: rgba(0,0,0,0.06);
+
+  // Shadows
+  --shadow-card: #{$shadow-md};
+  --shadow-pixel: #{$shadow-pixel};
+
+  // Pokémon Type Colors
+  --type-normal: #A8A77A;
+  --type-fire: #EE8130;
+  --type-water: #6390F0;
+  --type-electric: #F7D02C;
+  --type-grass: #7AC74C;
+  --type-ice: #96D9D6;
+  --type-fighting: #C22E28;
+  --type-poison: #A33EA1;
+  --type-ground: #E2BF65;
+  --type-flying: #A98FF3;
+  --type-psychic: #F95587;
+  --type-bug: #A6B91A;
+  --type-rock: #B6A136;
+  --type-ghost: #735797;
+  --type-dragon: #6F35FC;
+  --type-dark: #705746;
+  --type-steel: #B7B7CE;
+  --type-fairy: #D685AD;
+}
+
+[data-theme="dark"] {
+  --color-bg: #{$color-gray-900};
+  --color-bg-card: #{$color-gray-800};
+  --color-bg-header: #{$color-gray-800};
+  --color-bg-input: #{$color-gray-700};
+  --color-bg-badge: #{$color-gray-700};
+  --color-bg-toast: #{$color-gray-100};
+
+  --color-text-main: #{$color-gray-100};
+  --color-text-secondary: #{$color-gray-400};
+  --color-text-muted: #{$color-gray-500};
+  --color-text-inverse: #{$color-gray-800};
+  --color-text-toast: #{$color-gray-800};
+
+  --color-border: #{$color-gray-700};
+  --color-border-card: #{$color-gray-700};
+
+  --color-pixel-dot: rgba(255,255,255,0.04);
+  --shadow-card: 0 4px 12px rgba(0,0,0,0.4);
+}
