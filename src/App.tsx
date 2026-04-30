@@ -8,7 +8,7 @@ import './styles/global.scss';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Header />
       <main style={{ flex: 1 }}>
         <Routes>
