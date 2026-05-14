@@ -38,6 +38,7 @@ export const SearchPage: React.FC = () => {
         </div>
 
         <h1 className={styles.title}>
+          <img src="https://assets.pokemon.com/assets/cms2/img/misc/gus/buttons/logo-pokemon-79x45.png" alt="포켓몬 로고"/>
           <span className={styles.titleLine3}>포켓몬 아줌마가 딸깍으로 만든</span>
           <span className={styles.titleLine1}>pokemon ddalkak</span>
           <span className={styles.titleLine2}>Pokedex</span>
@@ -55,7 +56,10 @@ export const SearchPage: React.FC = () => {
             autoFocus
           />
           <button className={styles.searchBtn} onClick={handleSearch} disabled={loading}>
-            {loading ? '...' : '검색'}
+            {loading ? 
+              '...' 
+              : (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"/></svg>)
+            }
           </button>
         </div>
 

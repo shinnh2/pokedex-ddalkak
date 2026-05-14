@@ -12,10 +12,10 @@
 
 .pokeball {
   position: absolute;
-  top: -$space-8;
-  right: -$space-4;
-  width: 200px;
-  height: 200px;
+  top: $space-8;
+  left: calc(50% - 80px);
+  width: 160px;
+  height: 160px;
   opacity: 0.06;
   border-radius: 50%;
   background: white;
@@ -115,7 +115,7 @@
 
 .input {
   flex: 1;
-  padding: $space-4 $space-5;
+  padding: $space-3 $space-4;
   font-family: $font-body;
   font-size: $font-size-base;
   background: var(--color-bg-input);
@@ -137,17 +137,27 @@
 }
 
 .searchBtn {
-  padding: $space-4 $space-8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  aspect-ratio: 56 / 52;
+  object-fit: cover;
   background: var(--color-button-primary-bg);
   color: var(--color-button-primary-text);
   font-family: $font-pixel;
-  font-size: 10px;
   border-radius: $radius-full;
   border: none;
   cursor: pointer;
   transition: background $transition-fast, transform $transition-fast;
   box-shadow: 0 4px 0 var(--color-brand-dark), $shadow-sm;
   flex-shrink: 0;
+
+  svg{
+    width:20px;
+    height:20px;
+    fill:currentColor
+  }
 
   &:hover:not(:disabled) {
     background: var(--color-button-primary-hover);
@@ -164,6 +174,7 @@
     opacity: 0.6;
     cursor: not-allowed;
   }
+
 }
 
 .quickLinks {
