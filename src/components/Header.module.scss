@@ -34,8 +34,8 @@
 }
 
 .logoText {
-  font-family: $font-pixel;
-  font-size: 11px;
+  font-family: $font-pixel-ko;
+  font-size: 14px;
   color: var(--color-text-main);
   letter-spacing: -0.5px;
 }
@@ -47,7 +47,7 @@
 }
 
 .navLink {
-  font-family: $font-body;
+  font-family: $font-pixel-ko;
   font-size: $font-size-sm;
   font-weight: 700;
   color: var(--color-text-secondary);

@@ -42,9 +42,9 @@ export const PokemonListPage: React.FC = () => {
           </select>
         </div>
 
-        <div className={styles.countBadge}>
+        {/* <div className={styles.countBadge}>
           {items.length}마리
-        </div>
+        </div> */}
       </div>
 
       {loading && items.length === 0 ? (

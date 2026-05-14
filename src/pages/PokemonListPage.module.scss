@@ -58,8 +58,9 @@
 
 .countBadge {
   margin-left: auto;
-  font-family: $font-pixel;
-  font-size: 9px;
+  font-family: $font-pixel-ko;
+  font-weight: bold;
+  font-size: 11px;
   color: var(--color-brand-primary);
   background: rgba(229, 57, 53, 0.08);
   padding: $space-2 $space-3;

@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
+@font-face {
+  font-family: 'Galmuri9';
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Galmuri9 Regular'),
+       url('/fonts/Galmuri9.woff2') format('woff2'),
+       url('/fonts/Galmuri9.ttf') format('truetype');
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;

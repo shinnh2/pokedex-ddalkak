@@ -26,6 +26,7 @@
   @media (max-width: 600px) {
     width: 120px;
     height: 120px;
+    left: calc(50% - 60px);
     border-width: 8px;
   }
 }
@@ -67,13 +68,9 @@
 
 .titleLine1 {
   font-family: $font-pixel;
-  font-size: $font-size-xl;
+  font-size: $font-size-lg;
   color: var(--color-brand-primary);
   text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
-
-  @media (max-width: 600px) {
-    font-size: $font-size-lg;
-  }
 }
 
 .titleLine2 {
@@ -90,14 +87,10 @@
 }
 
 .titleLine3 {
-  font-family: $font-pixel;
-  font-size: $font-size-md;
+  font-family: $font-pixel-ko;
+  font-size: $font-size-lg;
   color: var(--color-brand-primary);
   text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
-
-  @media (max-width: 600px) {
-    font-size: $font-size-lg;
-  }
 }
 
 .subtitle {
@@ -109,7 +102,7 @@
 .searchBar {
   display: flex;
   gap: $space-2;
-  max-width: 520px;
+  max-width: 400px;
   margin: 0 auto $space-4;
 }
 
